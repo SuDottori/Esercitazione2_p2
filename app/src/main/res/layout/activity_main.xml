@@ -28,7 +28,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:text="ERRORE"
-                android:visibility="invisible"
+                android:visibility="gone"
                 android:id="@+id/gone"
                 android:textColor="@color/red"
                 android:textSize="20dp"/>
@@ -41,7 +41,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Nome:"
-                android:textSize="36dp"/>
+                android:textSize="25dp"/>
 
             <EditText
                 android:layout_width="match_parent"
@@ -57,7 +57,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Cognome:"
-                android:textSize="36dp"/>
+                android:textSize="25dp"/>
 
             <EditText
                 android:layout_width="match_parent"
@@ -73,7 +73,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Data di Nascita:"
-                android:textSize="36dp"/>
+                android:textSize="25dp"/>
 
             <EditText
                 android:layout_width="match_parent"
@@ -89,13 +89,38 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Indirizzo:"
-                android:textSize="36dp"/>
+                android:textSize="25dp"/>
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="es:Via Pippotto, 69"
                 android:id="@+id/attrIndirizzo"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CAP:"
+                android:textSize="25dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="es:09044"
+                android:id="@+id/attrCAP"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email:"
+                android:textSize="25dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="es:pippobaudo@franchino.com"
+                android:id="@+id/attrEmail"/>
+
 
 
             <RelativeLayout
@@ -108,7 +133,7 @@
                     android:layout_height="wrap_content"
                     android:text="Età:"
                     android:id="@+id/eta"
-                    android:textSize="36dp"/>
+                    android:textSize="25dp"/>
 
                 <EditText
                     android:layout_width="match_parent"
@@ -117,7 +142,7 @@
                     android:layout_alignBaseline="@+id/eta"
                     android:layout_marginLeft="30dp"
                     android:text="1"
-                    android:textSize="30dp"
+                    android:textSize="25dp"
                     android:id="@+id/input"/>
 
                 <Space
@@ -135,13 +160,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="1"
-                    android:textSize="30dp"
+                    android:textSize="25dp"
                     android:layout_below="@+id/seekbar"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="100"
-                    android:textSize="30dp"
+                    android:textSize="25dp"
                     android:layout_below="@+id/seekbar"
                     android:layout_alignRight="@+id/seekbar"/>
 
@@ -158,6 +183,19 @@
                 android:background="@color/celeste"
                 android:textColor="@color/black"
                 android:id="@+id/saveButton"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pulisci"
+                android:textAllCaps="false"
+                android:background="@color/celeste"
+                android:textColor="@color/black"
+                android:id="@+id/clean"/>
 
         </LinearLayout>
 

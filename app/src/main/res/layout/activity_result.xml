@@ -98,6 +98,30 @@
                 android:text="Via *****, xx"
                 android:id="@+id/titleIndirizzo"/>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CAP:"
+                android:textSize="36dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="09044"
+                android:id="@+id/titlecap"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email:"
+                android:textSize="36dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="pippobaudo@franchino.com"
+                android:id="@+id/titleEmail"/>
+
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="10dp"/>
@@ -106,13 +130,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="OK"
+                android:textColor="@color/black"
                 android:id="@+id/Confirm"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Indietro"
-                android:background="@color/red"
+                android:backgroundTint="@color/red"
+                android:textColor="@color/black"
                 android:id="@+id/Back"/>
 
 
